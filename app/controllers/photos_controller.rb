@@ -57,7 +57,6 @@ class PhotosController < ApplicationController
       format.html { redirect_back fallback_location: root_url, notice: "Photo was successfully destroyed." }
       format.json { head :no_content }
     end 
-    redirect_back(fallback_location: root_url, notice: "Nice try, but that is not your photo.")
   end
 
   private
